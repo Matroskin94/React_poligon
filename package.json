@@ -1,0 +1,19 @@
+{
+  "name": "react_poligon",
+  "version": "1.0.0",
+  "description": "Testing new features",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matroskin94/React_poligon.git"
+  },
+  "author": "Kotov A. N.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Matroskin94/React_poligon/issues"
+  },
+  "homepage": "https://github.com/Matroskin94/React_poligon#readme"
+}
