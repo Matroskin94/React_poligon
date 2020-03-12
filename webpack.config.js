@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    entry: __dirname+'/src/App.tsx',
+    entry: path.join(__dirname, 'src', 'App.tsx'),
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'app.bundle.js'
@@ -18,6 +18,10 @@ module.exports = {
     devServer: {
         publicPath: "/",
         contentBase: "./dist",
+        stats: "minimal",
         hot: true
     },
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js'],
+    }
 };

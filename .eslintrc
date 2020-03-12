@@ -1,0 +1,21 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint", "plugin:react/recommended"],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "modules": true,
+            "jsx": true
+        },
+        "sourceType": "module",
+        "ecmaVersion": 2018
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended"
+    ],
+    "rules": {
+      "quotes": [2, "single"]
+    }
+ }
