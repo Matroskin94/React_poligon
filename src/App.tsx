@@ -1,7 +1,9 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
+import {Root} from './components/root/root';
+
 ReactDOM.render(
-    <h1>Hello TS</h1>,
+    <Root />,
     document.getElementById('app')
 );
