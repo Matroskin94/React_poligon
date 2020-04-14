@@ -12,7 +12,23 @@ module.exports = {
                 test: /\.(ts|tsx)$/,
                 loader: 'awesome-typescript-loader',
                 exclude: /node_modules/,
-            }
+            },
+            {
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
+            },
+            {
+                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                      name: '[name].[ext]',
+                      outputPath: 'fonts/'
+                    }
+                  }
+                ]
+            },
         ]
     },
     devServer: {
@@ -22,6 +38,10 @@ module.exports = {
         hot: true
     },
     resolve: {
+        alias: {
+            src: path.join(__dirname, './src')
+        },
+        modules: ["node_modules"],
         extensions: ['.ts', '.tsx', '.js'],
     }
 };
